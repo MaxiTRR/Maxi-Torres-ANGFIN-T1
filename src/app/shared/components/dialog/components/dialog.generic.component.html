@@ -1,7 +1,6 @@
-<div class="container">
-  <h1 > {{data.title}}</h1>
-  <div mat-dialog-content>
-    <p>{{ data.data }}</p>
+<!--<div class="container">
+  <h1 [innerHTML]="data.title"></h1>
+  <div mat-dialog-content [innerHTML]="data.data" class="contenido">
   </div>
   <br />
   <div class="containerTerminosCondiciones">
@@ -18,4 +17,24 @@
       Cancelar
     </button>
   </div>
-</div>
+</div>-->
+
+<h1 [innerHTML]="data.title"></h1>
+<mat-dialog-content class="mat-typography" [innerHTML]="data.data">
+    
+</mat-dialog-content>
+
+<mat-dialog-actions align="center">
+  <button
+  type="button"
+  class="btn-Aceptar"
+  (click)="onNoClick()">
+  Aceptar
+  </button>
+  <button
+  type="button"
+  class="btn-cancelar"
+  (click)="onNoClick()">
+  Cancelar
+  </button>
+</mat-dialog-actions>

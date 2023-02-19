@@ -19,6 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
+import { DialogGenericoComponent } from './components/dialog/components/dialos.generic';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     RtitleComponent,
     ExchangeRateComponent,
     ExchangeComponent,
-    FormularioReutilizableComponent
+    FormularioReutilizableComponent,
+    DialogGenericoComponent
 
   ],
   imports: [
@@ -54,7 +56,8 @@ import { HttpClientModule } from '@angular/common/http';
     ExchangeRateComponent,
     ExchangeComponent,
     FormularioReutilizableComponent,
-    RtitleComponent
+    RtitleComponent,
+    DialogGenericoComponent
 
   ],
   providers: [
